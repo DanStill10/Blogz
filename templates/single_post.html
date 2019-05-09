@@ -1,9 +1,6 @@
 {% extends "base.html"%}
 {% block content %}
-<ol>
-        <li><a href="blog">Blog Feed</a></li>
-        <li><a href="new_post">Create A Post</a></li>
-</ol>
 <h2>{{blog_title}}</h2>
 <p>{{blog_content}}</p>
+<p>Written by <a href="./blog?username={{blog_username}}">{{blog_username}}</a></p>
 {% endblock %}

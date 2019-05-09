@@ -1,0 +1,13 @@
+{% extends "base.html"%}
+{% block content %}
+<form action="/signup" method="POST">
+    <h1>Blogz Signup</h1>
+        <input type="text" name="username" placeholder="Username">
+        <p class="error">{{user_name_error}}</p>
+        <input type="password" name="password" placeholder="Password">
+        <p class="error">{{password_error}}</p>
+        <input type="password" name="confirm_password" placeholder="Confirm password"> 
+        <p class="error">{{confirm_password_error}}</p>
+        <input type="submit" value="Confirm">
+</form>
+{% endblock %}
